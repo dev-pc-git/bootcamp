@@ -30,7 +30,7 @@ services:
   frontend:
     image: codespaces/ansible-node-ubuntu:18.04
     ports:
-       - "80:8079"
+       - "443:8079"
     networks:
       custom:
         ipv4_address: 192.168.61.11
@@ -41,7 +41,7 @@ services:
   catalogue:
     image: codespaces/ansible-node-ubuntu:18.04
     ports:
-       - "7081:80"
+       - "7081:443"
     networks:
       custom:
         ipv4_address: 192.168.61.12
@@ -52,7 +52,7 @@ services:
   carts:
     image: codespaces/ansible-node-ubuntu:18.04
     ports:
-      - "8081:80"
+      - "8081:443"
     networks:
       custom:
         ipv4_address: 192.168.61.13
